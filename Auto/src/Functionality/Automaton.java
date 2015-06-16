@@ -12,7 +12,7 @@ public class Automaton implements AutoSyntax, RegularLanguage {
 	private ArrayList<State> states;
 
 	public Automaton(ArrayList<String> states, ArrayList<String> symbols,
-			ArrayList<String[]> delta, HashSet<String> initialStates,
+			HashSet<String[]> delta, HashSet<String> initialStates,
 			HashSet<String> acceptingStates) {
 		this.alphabet = symbols;
 		this.states = new ArrayList<State>();
