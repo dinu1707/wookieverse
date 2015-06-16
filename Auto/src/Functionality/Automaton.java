@@ -109,7 +109,10 @@ public class Automaton implements AutoSyntax, RegularLanguage {
 		return false;
 
 	}
-
+	
+	public String sigmaToString() {
+		return this.alphabet.toString();
+	}
 	public boolean isDeterministic() {
 		if (getInitialStates().size() != 1)
 			return false;

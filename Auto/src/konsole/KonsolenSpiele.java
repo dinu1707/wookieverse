@@ -198,9 +198,9 @@ public class KonsolenSpiele {
 					break;
 				Automaton show = automaten.get(eingabeInt - 1);
 				show.automatAusgabeKonsole();
-				if (show.getMinimal())
+				if (show.isMinimal())
 					break;
-				if (show.getDeterministic()) {
+				if (show.isDeterministic()) {
 					System.out
 							.println("Automat ist noch nicht minimiert. Jetzt minimieren? („j/N“)");
 					eingabe = scanner.nextLine();
